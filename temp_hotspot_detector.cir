@@ -1,0 +1,9 @@
+.title KiCad schematic
+.include "spice/LM4041_N_ADJD1P233_TRANS.lib"
+R2 /Vbatt /Vout 680
+XU1 Net-_R1-Pad2_ /Vout 0 LM4041_N_ADJD1P233
+R1 /Vout Net-_R1-Pad2_ 120
+RT1 Net-_R1-Pad2_ 0 240
+V1 /Vbatt 0 dc 3.7
+.tran 1u 10u 0
+.end
